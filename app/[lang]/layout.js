@@ -15,7 +15,7 @@ export default function RootLayout({ children, params: { lang } }) {
   return (
     <html lang="en" className="dark">
       <body
-        className={`dark:bg-black font-[Sora] bg-white dark:text-white text-dark ${sora.className}`}
+        className={`dark:bg-dark font-[Sora] bg-white dark:text-white text-dark ${sora.className}`}
       >
         <Header />
         <main>

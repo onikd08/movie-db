@@ -10,7 +10,7 @@ const SideBar = async ({ lang }) => {
         <li>
           <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg bg-primary text-black"
-            href="#"
+            href="/"
           >
             <Image
               src="/assets/icons/trending.svg"
@@ -24,7 +24,7 @@ const SideBar = async ({ lang }) => {
         <li>
           <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg"
-            href="#"
+            href="/"
           >
             <Image
               src="/assets/icons/newRelease.svg"
@@ -38,7 +38,7 @@ const SideBar = async ({ lang }) => {
         <li>
           <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg"
-            href="#"
+            href="/"
           >
             <Image
               src="/assets/icons/commingSoon.svg"
@@ -52,10 +52,10 @@ const SideBar = async ({ lang }) => {
         <li>
           <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg"
-            href="#"
+            href="/"
           >
             <Image
-              src="./assets/icons/favourite.svg"
+              src="/assets/icons/favourite.svg"
               width="24"
               height="24"
               alt={dict.favourites}
@@ -66,7 +66,7 @@ const SideBar = async ({ lang }) => {
         <li>
           <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg"
-            href="#"
+            href="/"
           >
             <Image
               src="/assets/icons/watchLater.svg"
