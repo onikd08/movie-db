@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, dict }) => {
   return (
     <figure className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
       <Image
@@ -26,7 +26,7 @@ const MovieCard = ({ movie }) => {
           href={`/movies/${movie.id}`}
         >
           <Image src="/assets/tag.svg" alt="" width={20} height={20} />
-          <span>Details</span>
+          <span>{dict.details}</span>
         </Link>
       </figcaption>
     </figure>

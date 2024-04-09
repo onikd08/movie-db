@@ -9,5 +9,6 @@
   "release_date": "Release Date",
   "vote_average": "Average Vote",
   "vote_count": "Vote Count",
-  "popularity": "Popularity"
+  "popularity": "Popularity",
+  "details": "Details"
 }
