@@ -23,7 +23,7 @@ const Modal = ({ children }) => {
     <dialog
       onClose={closeModal}
       ref={modalRef}
-      className="shadow-lime-800 shadow-md border border-lime-600 flex flex-col p-4 lg:p-6 rounded-md h-3/4 w-3/4 bg-dark"
+      className="shadow-lime-800 shadow-md border border-lime-600 flex flex-col rounded-md h-3/4 w-3/4 bg-dark"
     >
       <span onClick={closeModal} className="flex justify-end cursor-pointer">
         <Image
@@ -34,7 +34,7 @@ const Modal = ({ children }) => {
           className="absolute"
         />
       </span>
-      {children}
+      <div className="px-2">{children}</div>
     </dialog>,
     document.getElementById("modal-root-container")
   );

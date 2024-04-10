@@ -25,11 +25,12 @@ export default function RootLayout({ children, modal, params: { lang } }) {
         <main>
           <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
             <SideBar lang={lang} />
-            {children}
-            <div id="modal-root-container"></div>
+            <div>
+              <div id="modal-root-container">{modal}</div>
+              {children}
+            </div>
           </div>
         </main>
-        <div>{modal}</div>
         <Footer />
       </body>
     </html>
