@@ -9,9 +9,13 @@ export const metadata = {
   description: "A movie collection website made with Next.js",
 };
 
-const sora = Sora({ subsets: ["latin"] });
+const sora = Sora({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
-export default function RootLayout({ children, params: { lang } }) {
+export default function RootLayout({ children, modal, params: { lang } }) {
   return (
     <html lang="en" className="dark">
       <body
@@ -25,6 +29,7 @@ export default function RootLayout({ children, params: { lang } }) {
             <div id="modal-root-container"></div>
           </div>
         </main>
+        <div>{modal}</div>
         <Footer />
       </body>
     </html>
