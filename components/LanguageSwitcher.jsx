@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
     },
     {
       code: "bn",
-      language: "Bangla",
+      language: "বাংলা",
     },
   ];
   const found = languages.find((lang) => pathname.includes(lang.code));
@@ -33,7 +33,7 @@ const LanguageSwitcher = () => {
     setSelectedLanguage({
       ...selectedLanguage,
       code: lang,
-      language: lang === "en" ? "English" : "Bangla",
+      language: lang === "en" ? "English" : "বাংলা",
     });
     setShowMenu(false);
     router.push(`/${lang}`);
@@ -49,11 +49,11 @@ const LanguageSwitcher = () => {
           <Image
             className="max-w-8"
             src={
-              selectedLanguage.language === "Bangla"
+              selectedLanguage.language === "বাংলা"
                 ? "/assets/bd.png"
                 : "/assets/usa.png"
             }
-            alt="bangla"
+            alt={selectedLanguage.language}
             height={100}
             width={165}
           />
@@ -70,11 +70,11 @@ const LanguageSwitcher = () => {
                 <Image
                   className="max-w-8"
                   src={
-                    entry.language === "Bangla"
+                    entry.language === "বাংলা"
                       ? "/assets/bd.png"
                       : "/assets/usa.png"
                   }
-                  alt="bangla"
+                  alt={entry.language}
                   height={100}
                   width={165}
                 />
